@@ -18,3 +18,25 @@ variable "vpc_info" {
   description = "This defines vpc details"
 
 }
+
+variable "public_subnets" {
+  type = list(object({
+    cidr_block = string
+    az         = string
+    name       = string
+    tags       = map(string)
+  }))
+  description = "This defines public subnet details"
+
+}
+
+variable "private_subnets" {
+  type = list(object({
+    cidr_block = string
+    az         = string
+    name       = string
+    tags       = map(string)
+  }))
+  description = "This defines private subnet details"
+
+}
