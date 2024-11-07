@@ -40,3 +40,4 @@ variable "private_subnets" {
   description = "This defines private subnet details"
 
 }
+
